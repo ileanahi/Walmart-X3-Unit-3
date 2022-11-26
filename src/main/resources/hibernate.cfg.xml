@@ -5,9 +5,9 @@
     <session-factory>
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://ec2-44-199-9-102.compute-1.amazonaws.com:5432/dii45i5freg71</property>
-        <property name="connection.username">lialofajaveaiv</property>
-        <property name="connection.password">1326f5de8a3a75a1f83451da324edc27a7fd637ac10c70c5f94b65f365b64554</property>
+        <property name="connection.url">jdbc:postgresql://${DB_DATABASE}</property>
+        <property name="connection.username">${DB_USER}</property>
+        <property name="connection.password">${DB_PASSWORD}</property>
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">1</property>
         <!-- Select our SQL dialect -->
